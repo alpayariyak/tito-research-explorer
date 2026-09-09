@@ -1,0 +1,536 @@
+{
+  "asOf": "2026-09-09",
+  "summary": {
+    "nExportedTrials": 23339,
+    "nAnalyzedTrials": 23288,
+    "nErroredTrials": 51,
+    "nCalls": 474408,
+    "noncanonicalCalls": 30432,
+    "exactLaterPrompts": 314149,
+    "laterPrompts": 451120,
+    "sameTextDifferentLaterPrompts": 131575,
+    "textDifferentLaterPrompts": 5396,
+    "breakTrajectories": 12192,
+    "driftEvents": 58589,
+    "sampledTokens": 353426340,
+    "retainedEventExamples": 57648,
+    "nArms": 9,
+    "noncanonicalPct": 6.414732,
+    "exactLaterPromptPct": 69.637569,
+    "differentLaterPromptPct": 30.362431,
+    "sameTextDifferentLaterPromptPct": 29.166297,
+    "textDifferentLaterPromptPct": 1.196134,
+    "breakPct": 52.353143,
+    "eventsPer1kSampledTokens": 0.165774,
+    "retainedEventPct": 98.393896,
+    "packingProxyRange": [
+      1.835804,
+      2.566767
+    ],
+    "model": "Qwen3.6-35B-A3B",
+    "frame": "Aligned recorded calls in 23,288 analyzed trial dumps. Unrecorded generations and attempts without dumps are outside this frame.",
+    "scope": "One model, one recipe and one tokenizer snapshot. The nine source groups include training, evaluation and task-selection dumps.",
+    "establishes": "Retokenization drift occurs in recorded agent trajectories and persists into later prompts. Exact training layouts can require repeated processing of the prefix.",
+    "doesNotEstablish": "These measurements do not show a reward loss, a reward benefit from TM-SEG, or deliberate use of token segmentation as memory."
+  },
+  "arms": [
+    {
+      "id": "dppo_launch1_0903",
+      "label": "DPPO · initial launch",
+      "group": "training",
+      "nTrials": 256,
+      "nExportedTrials": 256,
+      "nErrors": 0,
+      "nCalls": 5160,
+      "noncanonicalCalls": 308,
+      "noncanonicalPct": 5.968992,
+      "noncanonicalCI95Pct": [
+        5.002864,
+        6.815048
+      ],
+      "exactLaterPrompts": 3596,
+      "laterPrompts": 4904,
+      "exactLaterPromptPct": 73.327896,
+      "sameTextDifferentLaterPrompts": 1282,
+      "textDifferentLaterPrompts": 26,
+      "breakTrajectories": 126,
+      "breakPct": 49.21875,
+      "driftEvents": 611,
+      "sampledTokens": 3717652,
+      "eventsPer1kSampledTokens": 0.164351,
+      "eventsPer1kCI95": [
+        0.130495,
+        0.199847
+      ],
+      "packingProxy": 1.894402,
+      "packingProxyMedian": 1.0,
+      "packingProxyMax": 8.620701,
+      "attentionProxyMean": 1.735288,
+      "segmentsMean": 2.136719,
+      "includesPeriodicEvaluation": false
+    },
+    {
+      "id": "dppo_steps1_4_0904",
+      "label": "DPPO · early segment",
+      "group": "training",
+      "nTrials": 1463,
+      "nExportedTrials": 1465,
+      "nErrors": 2,
+      "nCalls": 27934,
+      "noncanonicalCalls": 1690,
+      "noncanonicalPct": 6.049975,
+      "noncanonicalCI95Pct": [
+        5.625423,
+        6.482912
+      ],
+      "exactLaterPrompts": 18582,
+      "laterPrompts": 26471,
+      "exactLaterPromptPct": 70.197575,
+      "sameTextDifferentLaterPrompts": 7485,
+      "textDifferentLaterPrompts": 404,
+      "breakTrajectories": 714,
+      "breakPct": 48.803828,
+      "driftEvents": 3249,
+      "sampledTokens": 19219119,
+      "eventsPer1kSampledTokens": 0.16905,
+      "eventsPer1kCI95": [
+        0.150091,
+        0.191949
+      ],
+      "packingProxy": 1.854989,
+      "packingProxyMedian": 1.0,
+      "packingProxyMax": 16.079574,
+      "attentionProxyMean": 1.697603,
+      "segmentsMean": 2.108681,
+      "includesPeriodicEvaluation": true
+    },
+    {
+      "id": "dppo_steps5_24_0905",
+      "label": "DPPO · later segment",
+      "group": "training",
+      "nTrials": 5278,
+      "nExportedTrials": 5280,
+      "nErrors": 2,
+      "nCalls": 106774,
+      "noncanonicalCalls": 6580,
+      "noncanonicalPct": 6.162549,
+      "noncanonicalCI95Pct": [
+        5.936778,
+        6.363289
+      ],
+      "exactLaterPrompts": 71395,
+      "laterPrompts": 101496,
+      "exactLaterPromptPct": 70.342674,
+      "sameTextDifferentLaterPrompts": 28833,
+      "textDifferentLaterPrompts": 1268,
+      "breakTrajectories": 2722,
+      "breakPct": 51.572565,
+      "driftEvents": 12807,
+      "sampledTokens": 80838784,
+      "eventsPer1kSampledTokens": 0.158426,
+      "eventsPer1kCI95": [
+        0.150159,
+        0.166317
+      ],
+      "packingProxy": 1.917173,
+      "packingProxyMedian": 1.421301,
+      "packingProxyMax": 13.944201,
+      "attentionProxyMean": 1.748806,
+      "segmentsMean": 2.188897,
+      "includesPeriodicEvaluation": true
+    },
+    {
+      "id": "ppo_control_0905",
+      "label": "PPO control",
+      "group": "training",
+      "nTrials": 6333,
+      "nExportedTrials": 6336,
+      "nErrors": 3,
+      "nCalls": 122976,
+      "noncanonicalCalls": 8414,
+      "noncanonicalPct": 6.841985,
+      "noncanonicalCI95Pct": [
+        6.63089,
+        7.044762
+      ],
+      "exactLaterPrompts": 81640,
+      "laterPrompts": 116643,
+      "exactLaterPromptPct": 69.991341,
+      "sameTextDifferentLaterPrompts": 33810,
+      "textDifferentLaterPrompts": 1193,
+      "breakTrajectories": 3369,
+      "breakPct": 53.197537,
+      "driftEvents": 16016,
+      "sampledTokens": 94784602,
+      "eventsPer1kSampledTokens": 0.168973,
+      "eventsPer1kCI95": [
+        0.160397,
+        0.178377
+      ],
+      "packingProxy": 1.977534,
+      "packingProxyMedian": 1.522952,
+      "packingProxyMax": 18.203737,
+      "attentionProxyMean": 1.798638,
+      "segmentsMean": 2.262909,
+      "includesPeriodicEvaluation": true
+    },
+    {
+      "id": "async_seg1_0908",
+      "label": "Async · first segment",
+      "group": "training",
+      "nTrials": 6859,
+      "nExportedTrials": 6861,
+      "nErrors": 2,
+      "nCalls": 141054,
+      "noncanonicalCalls": 8843,
+      "noncanonicalPct": 6.26923,
+      "noncanonicalCI95Pct": [
+        6.060346,
+        6.476625
+      ],
+      "exactLaterPrompts": 93757,
+      "laterPrompts": 134195,
+      "exactLaterPromptPct": 69.866239,
+      "sameTextDifferentLaterPrompts": 38979,
+      "textDifferentLaterPrompts": 1459,
+      "breakTrajectories": 3505,
+      "breakPct": 51.100744,
+      "driftEvents": 16303,
+      "sampledTokens": 100836487,
+      "eventsPer1kSampledTokens": 0.161678,
+      "eventsPer1kCI95": [
+        0.153563,
+        0.16938
+      ],
+      "packingProxy": 1.952294,
+      "packingProxyMedian": 1.420762,
+      "packingProxyMax": 17.208372,
+      "attentionProxyMean": 1.774612,
+      "segmentsMean": 2.23604,
+      "includesPeriodicEvaluation": true
+    },
+    {
+      "id": "async_seg2_0908",
+      "label": "Async · resumed segment",
+      "group": "training",
+      "nTrials": 1880,
+      "nExportedTrials": 1880,
+      "nErrors": 0,
+      "nCalls": 42004,
+      "noncanonicalCalls": 2710,
+      "noncanonicalPct": 6.451766,
+      "noncanonicalCI95Pct": [
+        6.107685,
+        6.790553
+      ],
+      "exactLaterPrompts": 27279,
+      "laterPrompts": 40124,
+      "exactLaterPromptPct": 67.986741,
+      "sameTextDifferentLaterPrompts": 12294,
+      "textDifferentLaterPrompts": 551,
+      "breakTrajectories": 1052,
+      "breakPct": 55.957447,
+      "driftEvents": 5115,
+      "sampledTokens": 31512188,
+      "eventsPer1kSampledTokens": 0.162318,
+      "eventsPer1kCI95": [
+        0.149455,
+        0.176007
+      ],
+      "packingProxy": 2.059981,
+      "packingProxyMedian": 1.700801,
+      "packingProxyMax": 13.110558,
+      "attentionProxyMean": 1.860873,
+      "segmentsMean": 2.379255,
+      "includesPeriodicEvaluation": true
+    },
+    {
+      "id": "heldout_untrained",
+      "label": "Held-out · untrained",
+      "group": "evaluation",
+      "nTrials": 348,
+      "nExportedTrials": 348,
+      "nErrors": 0,
+      "nCalls": 8091,
+      "noncanonicalCalls": 513,
+      "noncanonicalPct": 6.340378,
+      "noncanonicalCI95Pct": [
+        5.652486,
+        7.046039
+      ],
+      "exactLaterPrompts": 5109,
+      "laterPrompts": 7743,
+      "exactLaterPromptPct": 65.982177,
+      "sameTextDifferentLaterPrompts": 2471,
+      "textDifferentLaterPrompts": 163,
+      "breakTrajectories": 211,
+      "breakPct": 60.632184,
+      "driftEvents": 965,
+      "sampledTokens": 6596242,
+      "eventsPer1kSampledTokens": 0.146295,
+      "eventsPer1kCI95": [
+        0.122309,
+        0.172705
+      ],
+      "packingProxy": 2.101705,
+      "packingProxyMedian": 1.795484,
+      "packingProxyMax": 9.58949,
+      "attentionProxyMean": 1.902027,
+      "segmentsMean": 2.416667,
+      "includesPeriodicEvaluation": false
+    },
+    {
+      "id": "heldout_dppo24",
+      "label": "Held-out · DPPO-24",
+      "group": "evaluation",
+      "nTrials": 350,
+      "nExportedTrials": 352,
+      "nErrors": 2,
+      "nCalls": 9826,
+      "noncanonicalCalls": 775,
+      "noncanonicalPct": 7.887238,
+      "noncanonicalCI95Pct": [
+        6.973444,
+        8.74764
+      ],
+      "exactLaterPrompts": 5585,
+      "laterPrompts": 9476,
+      "exactLaterPromptPct": 58.938371,
+      "sameTextDifferentLaterPrompts": 3684,
+      "textDifferentLaterPrompts": 207,
+      "breakTrajectories": 238,
+      "breakPct": 68.0,
+      "driftEvents": 2272,
+      "sampledTokens": 9151713,
+      "eventsPer1kSampledTokens": 0.24826,
+      "eventsPer1kCI95": [
+        0.154826,
+        0.407785
+      ],
+      "packingProxy": 2.566767,
+      "packingProxyMedian": 1.942854,
+      "packingProxyMax": 9.977577,
+      "attentionProxyMean": 2.248229,
+      "segmentsMean": 3.12,
+      "includesPeriodicEvaluation": false
+    },
+    {
+      "id": "select128_0903",
+      "label": "Task-selection corpus",
+      "group": "selection",
+      "nTrials": 521,
+      "nExportedTrials": 561,
+      "nErrors": 40,
+      "nCalls": 10589,
+      "noncanonicalCalls": 599,
+      "noncanonicalPct": 5.656814,
+      "noncanonicalCI95Pct": [
+        5.006059,
+        6.32973
+      ],
+      "exactLaterPrompts": 7206,
+      "laterPrompts": 10068,
+      "exactLaterPromptPct": 71.573302,
+      "sameTextDifferentLaterPrompts": 2737,
+      "textDifferentLaterPrompts": 125,
+      "breakTrajectories": 255,
+      "breakPct": 48.944338,
+      "driftEvents": 1251,
+      "sampledTokens": 6769553,
+      "eventsPer1kSampledTokens": 0.184798,
+      "eventsPer1kCI95": [
+        0.153082,
+        0.217232
+      ],
+      "packingProxy": 1.835804,
+      "packingProxyMedian": 1.0,
+      "packingProxyMax": 10.95678,
+      "attentionProxyMean": 1.702272,
+      "segmentsMean": 2.057582,
+      "includesPeriodicEvaluation": false
+    }
+  ],
+  "heldout": {
+    "metric": "Noncanonical-call rate; trained minus untrained",
+    "nTasks": 109,
+    "untrainedPct": 6.340378,
+    "trainedPct": 7.887238,
+    "rawDifferencePp": 1.54686,
+    "rawCI": [
+      0.571511,
+      2.527249
+    ],
+    "standardizedDifferencePp": 0.82711,
+    "standardizedCI": [
+      -0.120442,
+      1.801521
+    ],
+    "comparisons": [
+      {
+        "id": "raw",
+        "label": "All recorded calls",
+        "differencePp": 1.54686,
+        "ci95Pp": [
+          0.571511,
+          2.527249
+        ]
+      },
+      {
+        "id": "task",
+        "label": "Equal weight per task",
+        "differencePp": 1.315884,
+        "ci95Pp": [
+          0.251977,
+          2.436158
+        ]
+      },
+      {
+        "id": "turn",
+        "label": "Task + exact turn",
+        "differencePp": 0.817734,
+        "ci95Pp": [
+          -0.242829,
+          1.922043
+        ]
+      },
+      {
+        "id": "length",
+        "label": "Task + turn + response length",
+        "differencePp": 0.82711,
+        "ci95Pp": [
+          -0.120442,
+          1.801521
+        ]
+      }
+    ],
+    "standardizedCoveragePct": {
+      "untrained": 89.828204,
+      "trained": 82.230816
+    },
+    "exactTurnCoveragePct": {
+      "untrained": 96.341614,
+      "trained": 85.721555
+    },
+    "meanCallsPerAttempt": {
+      "untrained": 23.25,
+      "trained": 28.074
+    },
+    "meanSampledTokensPerCall": {
+      "untrained": 815.257,
+      "trained": 931.377
+    },
+    "intervalMethod": "95% paired task-bootstrap intervals; 109 tasks, 5,000 resamples.",
+    "standardization": "Equal weight per task; pooled call-count weights within shared task, turn-bucket and response-length cells. Weights are fixed at the observed sample.",
+    "reading": "The trained-policy dumps have more noncanonical calls. The standardized difference is smaller, and its interval includes zero.",
+    "caveat": "Both arms cover the same 109 tasks, but extra attempts and two exclusions mean this is not a clean three-replicate evaluation. Standardization conditions on behavior changed by training and restricts shared support; it does not identify a causal share or measure reward."
+  },
+  "definitions": {
+    "noncanonicalCall": "A sampled response whose token sequence changes when its text is re-encoded.",
+    "laterPrompt": "A model request after the first call in a trajectory.",
+    "exactLaterPrompt": "A later token-memory prompt that equals the declared transcript renderer’s prompt.",
+    "breakTrajectory": "An analyzed trajectory with at least one recorded prompt mismatch.",
+    "packingProxy": "Mean of per-trajectory token-multiplier proxies, relative to a single token-memory sequence. This is not exact TM-SEG packing or measured wall time.",
+    "packingCaveat": "The proxy infers breaks from positional differences and includes observation-tail overcount. Actual compatible segments and service throughput remain to be validated.",
+    "armScope": "Training source groups include their periodic evaluation dumps; this table summarizes source groups, not training-only version trends.",
+    "uncertainty": "Per-arm intervals resample trial clusters and condition on each arm’s task mix. Held-out contrast intervals pair and resample tasks.",
+    "eventCoverage": "The total event count is uncensored. Event examples and their types are truncated to at most 20 per call; observed-example composition is not full-corpus incidence."
+  },
+  "eventExamples": {
+    "fullEvents": 58589,
+    "retainedEvents": 57648,
+    "retainedPct": 98.393896,
+    "typesObserved": [
+      {
+        "id": "mixed_code_like",
+        "count": 25524
+      },
+      {
+        "id": "word_internal",
+        "count": 13145
+      },
+      {
+        "id": "word_with_leading_space",
+        "count": 12900
+      },
+      {
+        "id": "punct_symbols",
+        "count": 5266
+      },
+      {
+        "id": "non_ascii",
+        "count": 596
+      },
+      {
+        "id": "empty",
+        "count": 98
+      },
+      {
+        "id": "newline_whitespace",
+        "count": 74
+      },
+      {
+        "id": "whitespace_only",
+        "count": 44
+      },
+      {
+        "id": "spans_newline",
+        "count": 1
+      }
+    ],
+    "note": "Counts describe retained examples only. Region-specific rates are unavailable because exposure denominators were not exported."
+  },
+  "sources": [
+    {
+      "id": "corpus",
+      "label": "Corpus measurement report",
+      "path": "sources.html#corpus",
+      "sha256": "c2459269dffb2a8895fbc09eb7ac54bfb820b770fe1c5b8463f1ca91acfb4e90"
+    },
+    {
+      "id": "audit",
+      "label": "Independent corpus and held-out audit",
+      "path": "sources.html#audit",
+      "sha256": "80ffe2f40e0ea8ae12192c3c841993ee4f3517712a078cb4fa44f582eacc6840"
+    },
+    {
+      "id": "corrections",
+      "label": "Verification of corrected aggregation",
+      "path": "sources.html#corrections",
+      "sha256": "b14d23bb8a718d8cf5c2006fadb80b3c165b3af69b35f30440906c754f6457bd"
+    },
+    {
+      "id": "reference-design",
+      "label": "Deployment-fidelity design",
+      "path": "sources.html#reference-design",
+      "sha256": "2ec04ebe6dbab47416d6a60f78f0d9ee7745b799d202b1572954ea6e9be2ecef"
+    },
+    {
+      "id": "design-review",
+      "label": "Design convergence review",
+      "path": "sources.html#design-review",
+      "sha256": "19b10530f32b785d44f647a26cea9f4cc4ef69b53145f0f849c72e04378f2f43"
+    },
+    {
+      "id": "implementation-review",
+      "label": "Transcript-memory implementation review",
+      "path": "sources.html#implementation-review",
+      "sha256": "763a365780e6ac566147bf852238b8e28b1fb7f4061e2aca1978f4f42ff695f9"
+    }
+  ],
+  "provenance": {
+    "aggregate": {
+      "sha256": "8c8aed201d9fcff1f39a131dd2d92c21f892ebac45c2a7416637236e225a1f31",
+      "version": "Phase 0 v3"
+    },
+    "heldoutAudit": {
+      "sha256": "7940cb0a1e25862c22e2137d7424a01d9f25b4b212c77290019c764f11938d27"
+    }
+  },
+  "status": {
+    "design": "Converged",
+    "implementation": "In progress / under review",
+    "pilot": "Not run",
+    "rewardBenefit": "Not demonstrated",
+    "note": "Design convergence is not implementation or service certification. The transcript-memory patch required changes; working fixes have not yet been independently approved."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "public_site": "https://alpayariyak.github.io/tito-research-explorer/",
+  "frontend_inputs": {
+    "app.js": "945f37afe48621b20019f13d61e58299bc8dbe9fee7f492d41d030f889829146",
+    "evidence.js": "2dfffc13303e3919ac4c2a6b347499e31828197f2ab1fdbcbeba4738f43e7d53",
+    "evidence.json": "cb7ed120ba17fbfd240ccb78093679310b1079db8b3a4024538bc543c23bee93",
+    "explorer.css": "9b92827acca3bdaa3b6d65c8cf00f1dea854208f0a0fb052222218a7e47fe951",
+    "index.html": "d5247e9e0fd7a3c8d256cfb205d3c178416de6546640acc548c904eec183811d",
+    "mechanics-section.html": "e94bf195c7243d9653992ebcdc17312e4f0c233008490de5d6a2322c833f8910",
+    "mechanics.css": "e749b16845f8c015edb597511fc478fa7ca076e7f4fb42ff527ed00e994c3c34",
+    "mechanics.js": "5d72f3302f24328d24a290adb19bb968d743b7576f2cbca86af510c8acd18d34",
+    "progress-section.html": "87a4f327b684b8f699b9b05a31c5fec750094fdcf8921fe6edcc032811be6ec2",
+    "research-data.js": "2878bf0e82d55344214a390068c122b91a544a236ca5c2cf9e1ea320472f78b7",
+    "research-section.html": "68f90970a8179e54467720f9a050537298a2095c06fb99e6634b17ffe1bb286e",
+    "research.js": "0c39864a5dfc531a99c7737aad12d7308f04eac8ba94ff949d90318f626fb638",
+    "study-section.html": "1b4416cfbcbcd28fd684aabe2e2bf10796cabe17f196b966cdfae9f135bb1cf9",
+    "styles.css": "e1a9cabf4f3cf063c9a93365469220ac928d3d7c24ead30fd9af2d1c33f14658"
+  },
+  "outputs": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "0a84d7470839a74e11fabbbdcc20b48bf0a9c0234e4e785989448223e6443bc9",
+    "evidence.json": "e5c8f664cacf76ac0920e04c22d4f3caa1a7b74efb83c02722d327078fddbefb",
+    "index.html": "c6ff79914d9667d3f59294376b3ecaa2c116b9e95f84dd5db43bd5831c8e62e9",
+    "research-data.json": "3d450c0fcd400c90d5639c6b012bee05945ebc95319f53ac5c8b83aa667bf558",
+    "sources.html": "8cf7bba3609e7714549fc8ce944e8502db4a4fb33352a6512589d1d5847a1503",
+    "tito-explorer.html": "c6ff79914d9667d3f59294376b3ecaa2c116b9e95f84dd5db43bd5831c8e62e9"
+  },
+  "scope": "Whitelisted static edition; private source documents and operational records are not included."
+}

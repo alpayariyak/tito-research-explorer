@@ -1,0 +1,1466 @@
+{
+  "description": "Independently reproduced smoke replay. Call numbers in this extract are one-based. Initial prompts are not included in later-prompt counts.",
+  "source": "Public smoke-replay extract; reference fingerprint retained in source_sha256",
+  "source_sha256": "dae65effe328b9f5c1cbb9ea286ebce17437711a8f01947cf97dd7008c24b6a7",
+  "summary": {
+    "A_calls": {
+      "calls": 160,
+      "calls_noncanonical": 26,
+      "calls_noncanonical_frac": 0.1625,
+      "calls_noncanonical_frac_ci95_trial_bootstrap": [
+        0.06875,
+        0.26875
+      ],
+      "calls_render_not_identity": 0,
+      "calls_text_differs": 0,
+      "diff_tokens_sampled_side": 65,
+      "distinct_event_strings": 11,
+      "events": 32,
+      "events_len_change": 13,
+      "events_per_1k_sampled_tokens": 1.4644638689304836,
+      "events_per_1k_sampled_tokens_ci95_trial_bootstrap": [
+        0.5926145412793067,
+        2.705361534677816
+      ],
+      "events_seam": {
+        "within": 32
+      },
+      "render_causes": {},
+      "sampled_tokens": 21851,
+      "top_event_strings": [
+        [
+          "/Supply | /S|upply -> /|Supply",
+          14
+        ],
+        [
+          "DCF | DC|F -> DCF",
+          8
+        ],
+        [
+          "_Share | _S|hare -> _Sh|are",
+          2
+        ],
+        [
+          " Logistics |  Log|istics ->  Logistics",
+          1
+        ],
+        [
+          "*tar | *|tar -> *t|ar",
+          1
+        ],
+        [
+          "expert | exp|ert -> expert",
+          1
+        ],
+        [
+          "/Old | /|Old -> /O|ld",
+          1
+        ],
+        [
+          "/Market | /M|arket -> /|Market",
+          1
+        ]
+      ],
+      "typology": {
+        "mixed_code_like": 21,
+        "word_internal": 9,
+        "word_with_leading_space": 2
+      }
+    },
+    "B_prompts": {
+      "break_hazard_by_turn": {
+        "10": 2,
+        "11": 1,
+        "12": 1,
+        "13": 3,
+        "14": 3,
+        "15": 2,
+        "16": 2,
+        "17": 2,
+        "18": 1,
+        "19": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "8": 2,
+        "9": 1
+      },
+      "exact": 85,
+      "exact_frac": 0.5592105263157895,
+      "first_break_turn": [
+        16,
+        13,
+        4,
+        9,
+        null,
+        15,
+        14,
+        2
+      ],
+      "first_event_region_per_trajectory": {
+        "none": 1,
+        "reasoning": 2,
+        "tool_call": 5
+      },
+      "new_event_regions": {
+        "reasoning": 8,
+        "tool_call": 24
+      },
+      "new_event_typology": {
+        "mixed_code_like": 21,
+        "word_internal": 9,
+        "word_with_leading_space": 2
+      },
+      "new_events": 32,
+      "new_events_per_1k_sampled_tokens_entering_prompts": 1.514004542013626,
+      "prompts": 152,
+      "prompts_by_turn": {
+        "1": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8,
+        "13": 8,
+        "14": 8,
+        "15": 8,
+        "16": 8,
+        "17": 8,
+        "18": 8,
+        "19": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8
+      },
+      "prompts_with_new_event": 26,
+      "prompts_with_new_event_frac": 0.17105263157894737,
+      "same_text_diff_ids": 67,
+      "secondary_causes": {},
+      "text_differs": 0,
+      "trajectories_with_break": 7,
+      "trajectories_with_break_frac_ci95": [
+        0.625,
+        1.0
+      ]
+    },
+    "cost_inputs": {
+      "loss_tokens_after_first_break_frac_mean": 0.4662381753877217,
+      "split_at_break_attention_multiplier_mean": 3.945657272297889,
+      "split_at_break_segments": [
+        2,
+        3,
+        5,
+        10,
+        1,
+        2,
+        3,
+        8
+      ],
+      "split_at_break_segments_mean": 4.25,
+      "split_at_break_token_multiplier_max": 9.741623776364921,
+      "split_at_break_token_multiplier_mean": 4.092525114613467,
+      "split_at_break_token_multiplier_median": 2.907080734232119
+    },
+    "error_taxonomy": {},
+    "fallbacks": {},
+    "flags": {
+      "assistant_vs_transition_mismatch": 0,
+      "tape_not_append_only": 0,
+      "trials_eval": 0,
+      "trials_with_image_user_msgs": 1,
+      "trials_with_mid_episode_system_msgs": 0,
+      "trials_with_mid_episode_user_msgs": 0
+    },
+    "template_kwargs": {},
+    "tokenizer": "Qwen/Qwen3.6-35B-A3B",
+    "trials": 8,
+    "trials_errored": 0
+  },
+  "trajectories": [
+    {
+      "label": "Trial 1",
+      "trial": "world112-1-task02-tb-87dd4d82__GBXQLz2",
+      "segments": 2,
+      "tokenMultiplier": 1.8991573747866197,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3897,
+          "referenceLength": 3897,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4377,
+          "referenceLength": 4377,
+          "newEvents": 0
+        },
+        {
+          "call": 4,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 5102,
+          "referenceLength": 5102,
+          "newEvents": 0
+        },
+        {
+          "call": 5,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 5508,
+          "referenceLength": 5508,
+          "newEvents": 0
+        },
+        {
+          "call": 6,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 5890,
+          "referenceLength": 5890,
+          "newEvents": 0
+        },
+        {
+          "call": 7,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 6113,
+          "referenceLength": 6113,
+          "newEvents": 0
+        },
+        {
+          "call": 8,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 6356,
+          "referenceLength": 6356,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 6525,
+          "referenceLength": 6525,
+          "newEvents": 0
+        },
+        {
+          "call": 10,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 6959,
+          "referenceLength": 6959,
+          "newEvents": 0
+        },
+        {
+          "call": 11,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 7516,
+          "referenceLength": 7516,
+          "newEvents": 0
+        },
+        {
+          "call": 12,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 7594,
+          "referenceLength": 7594,
+          "newEvents": 0
+        },
+        {
+          "call": 13,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 8261,
+          "referenceLength": 8261,
+          "newEvents": 0
+        },
+        {
+          "call": 14,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 13119,
+          "referenceLength": 13119,
+          "newEvents": 0
+        },
+        {
+          "call": 15,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 13443,
+          "referenceLength": 13443,
+          "newEvents": 0
+        },
+        {
+          "call": 16,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 13806,
+          "referenceLength": 13806,
+          "newEvents": 0
+        },
+        {
+          "call": 17,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 14310,
+          "referenceLength": 14309,
+          "newEvents": 1
+        },
+        {
+          "call": 18,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 14605,
+          "referenceLength": 14604,
+          "newEvents": 0
+        },
+        {
+          "call": 19,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 19475,
+          "referenceLength": 19474,
+          "newEvents": 0
+        },
+        {
+          "call": 20,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 19764,
+          "referenceLength": 19763,
+          "newEvents": 0
+        }
+      ]
+    },
+    {
+      "label": "Trial 2",
+      "trial": "world112-1-task02-tb-87dd4d82__gfjo5AJ",
+      "segments": 3,
+      "tokenMultiplier": 2.907080734232119,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 1788,
+          "referenceLength": 1788,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 2016,
+          "referenceLength": 2016,
+          "newEvents": 0
+        },
+        {
+          "call": 4,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 2854,
+          "referenceLength": 2854,
+          "newEvents": 0
+        },
+        {
+          "call": 5,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3411,
+          "referenceLength": 3411,
+          "newEvents": 0
+        },
+        {
+          "call": 6,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4003,
+          "referenceLength": 4003,
+          "newEvents": 0
+        },
+        {
+          "call": 7,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4157,
+          "referenceLength": 4157,
+          "newEvents": 0
+        },
+        {
+          "call": 8,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4274,
+          "referenceLength": 4274,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 5520,
+          "referenceLength": 5520,
+          "newEvents": 0
+        },
+        {
+          "call": 10,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 6781,
+          "referenceLength": 6781,
+          "newEvents": 0
+        },
+        {
+          "call": 11,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 6918,
+          "referenceLength": 6918,
+          "newEvents": 0
+        },
+        {
+          "call": 12,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 7007,
+          "referenceLength": 7007,
+          "newEvents": 0
+        },
+        {
+          "call": 13,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 7086,
+          "referenceLength": 7086,
+          "newEvents": 0
+        },
+        {
+          "call": 14,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7212,
+          "referenceLength": 7212,
+          "newEvents": 1
+        },
+        {
+          "call": 15,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7338,
+          "referenceLength": 7338,
+          "newEvents": 0
+        },
+        {
+          "call": 16,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7432,
+          "referenceLength": 7432,
+          "newEvents": 0
+        },
+        {
+          "call": 17,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7555,
+          "referenceLength": 7555,
+          "newEvents": 0
+        },
+        {
+          "call": 18,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7680,
+          "referenceLength": 7679,
+          "newEvents": 1
+        },
+        {
+          "call": 19,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7807,
+          "referenceLength": 7806,
+          "newEvents": 0
+        },
+        {
+          "call": 20,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 9411,
+          "referenceLength": 9410,
+          "newEvents": 0
+        }
+      ]
+    },
+    {
+      "label": "Trial 3",
+      "trial": "world112-1-task02-tb-87dd4d82__h6JVX8R",
+      "segments": 5,
+      "tokenMultiplier": 4.674834051473157,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 187,
+          "referenceLength": 187,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 664,
+          "referenceLength": 664,
+          "newEvents": 0
+        },
+        {
+          "call": 4,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 1899,
+          "referenceLength": 1899,
+          "newEvents": 0
+        },
+        {
+          "call": 5,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 2251,
+          "referenceLength": 2251,
+          "newEvents": 1
+        },
+        {
+          "call": 6,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 2383,
+          "referenceLength": 2383,
+          "newEvents": 0
+        },
+        {
+          "call": 7,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 2450,
+          "referenceLength": 2450,
+          "newEvents": 0
+        },
+        {
+          "call": 8,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 2867,
+          "referenceLength": 2867,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3208,
+          "referenceLength": 3208,
+          "newEvents": 2
+        },
+        {
+          "call": 10,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3632,
+          "referenceLength": 3632,
+          "newEvents": 0
+        },
+        {
+          "call": 11,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3746,
+          "referenceLength": 3746,
+          "newEvents": 0
+        },
+        {
+          "call": 12,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3862,
+          "referenceLength": 3862,
+          "newEvents": 0
+        },
+        {
+          "call": 13,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 5129,
+          "referenceLength": 5129,
+          "newEvents": 0
+        },
+        {
+          "call": 14,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 5278,
+          "referenceLength": 5278,
+          "newEvents": 2
+        },
+        {
+          "call": 15,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6230,
+          "referenceLength": 6230,
+          "newEvents": 1
+        },
+        {
+          "call": 16,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6480,
+          "referenceLength": 6480,
+          "newEvents": 0
+        },
+        {
+          "call": 17,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6929,
+          "referenceLength": 6929,
+          "newEvents": 0
+        },
+        {
+          "call": 18,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7284,
+          "referenceLength": 7284,
+          "newEvents": 0
+        },
+        {
+          "call": 19,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7520,
+          "referenceLength": 7520,
+          "newEvents": 0
+        },
+        {
+          "call": 20,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7673,
+          "referenceLength": 7673,
+          "newEvents": 0
+        }
+      ]
+    },
+    {
+      "label": "Trial 4",
+      "trial": "world112-1-task02-tb-87dd4d82__TLAsHoG",
+      "segments": 10,
+      "tokenMultiplier": 9.741623776364921,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 282,
+          "referenceLength": 282,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 381,
+          "referenceLength": 381,
+          "newEvents": 0
+        },
+        {
+          "call": 4,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 558,
+          "referenceLength": 558,
+          "newEvents": 0
+        },
+        {
+          "call": 5,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 710,
+          "referenceLength": 710,
+          "newEvents": 0
+        },
+        {
+          "call": 6,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 813,
+          "referenceLength": 813,
+          "newEvents": 0
+        },
+        {
+          "call": 7,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 940,
+          "referenceLength": 940,
+          "newEvents": 0
+        },
+        {
+          "call": 8,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 2170,
+          "referenceLength": 2170,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 2403,
+          "referenceLength": 2403,
+          "newEvents": 0
+        },
+        {
+          "call": 10,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 2702,
+          "referenceLength": 2702,
+          "newEvents": 1
+        },
+        {
+          "call": 11,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 2832,
+          "referenceLength": 2832,
+          "newEvents": 1
+        },
+        {
+          "call": 12,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 2930,
+          "referenceLength": 2930,
+          "newEvents": 1
+        },
+        {
+          "call": 13,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3033,
+          "referenceLength": 3033,
+          "newEvents": 1
+        },
+        {
+          "call": 14,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3167,
+          "referenceLength": 3167,
+          "newEvents": 1
+        },
+        {
+          "call": 15,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3472,
+          "referenceLength": 3472,
+          "newEvents": 1
+        },
+        {
+          "call": 16,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3602,
+          "referenceLength": 3602,
+          "newEvents": 2
+        },
+        {
+          "call": 17,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3734,
+          "referenceLength": 3734,
+          "newEvents": 1
+        },
+        {
+          "call": 18,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3979,
+          "referenceLength": 3979,
+          "newEvents": 0
+        },
+        {
+          "call": 19,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 4184,
+          "referenceLength": 4184,
+          "newEvents": 1
+        },
+        {
+          "call": 20,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 4334,
+          "referenceLength": 4334,
+          "newEvents": 0
+        }
+      ]
+    },
+    {
+      "label": "Trial 5",
+      "trial": "world244-os-task03-39c68b48__4n8KWva",
+      "segments": 1,
+      "tokenMultiplier": 1.0,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 214,
+          "referenceLength": 214,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 341,
+          "referenceLength": 341,
+          "newEvents": 0
+        },
+        {
+          "call": 4,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 539,
+          "referenceLength": 539,
+          "newEvents": 0
+        },
+        {
+          "call": 5,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 782,
+          "referenceLength": 782,
+          "newEvents": 0
+        },
+        {
+          "call": 6,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 1156,
+          "referenceLength": 1156,
+          "newEvents": 0
+        },
+        {
+          "call": 7,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 1334,
+          "referenceLength": 1334,
+          "newEvents": 0
+        },
+        {
+          "call": 8,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3355,
+          "referenceLength": 3355,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3608,
+          "referenceLength": 3608,
+          "newEvents": 0
+        },
+        {
+          "call": 10,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3880,
+          "referenceLength": 3880,
+          "newEvents": 0
+        },
+        {
+          "call": 11,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4120,
+          "referenceLength": 4120,
+          "newEvents": 0
+        },
+        {
+          "call": 12,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4817,
+          "referenceLength": 4817,
+          "newEvents": 0
+        },
+        {
+          "call": 13,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 5943,
+          "referenceLength": 5943,
+          "newEvents": 0
+        },
+        {
+          "call": 14,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 8339,
+          "referenceLength": 8339,
+          "newEvents": 0
+        },
+        {
+          "call": 15,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 9633,
+          "referenceLength": 9633,
+          "newEvents": 0
+        },
+        {
+          "call": 16,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 9835,
+          "referenceLength": 9835,
+          "newEvents": 0
+        },
+        {
+          "call": 17,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 10079,
+          "referenceLength": 10079,
+          "newEvents": 0
+        },
+        {
+          "call": 18,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 10532,
+          "referenceLength": 10532,
+          "newEvents": 0
+        },
+        {
+          "call": 19,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 10671,
+          "referenceLength": 10671,
+          "newEvents": 0
+        },
+        {
+          "call": 20,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 10789,
+          "referenceLength": 10789,
+          "newEvents": 0
+        }
+      ]
+    },
+    {
+      "label": "Trial 6",
+      "trial": "world244-os-task03-39c68b48__AAs6zQ2",
+      "segments": 2,
+      "tokenMultiplier": 1.9815468477726643,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 245,
+          "referenceLength": 245,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 333,
+          "referenceLength": 333,
+          "newEvents": 0
+        },
+        {
+          "call": 4,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 405,
+          "referenceLength": 405,
+          "newEvents": 0
+        },
+        {
+          "call": 5,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 531,
+          "referenceLength": 531,
+          "newEvents": 0
+        },
+        {
+          "call": 6,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 614,
+          "referenceLength": 614,
+          "newEvents": 0
+        },
+        {
+          "call": 7,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 826,
+          "referenceLength": 826,
+          "newEvents": 0
+        },
+        {
+          "call": 8,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 1784,
+          "referenceLength": 1784,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 1929,
+          "referenceLength": 1929,
+          "newEvents": 0
+        },
+        {
+          "call": 10,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 2020,
+          "referenceLength": 2020,
+          "newEvents": 0
+        },
+        {
+          "call": 11,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3061,
+          "referenceLength": 3061,
+          "newEvents": 0
+        },
+        {
+          "call": 12,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3677,
+          "referenceLength": 3677,
+          "newEvents": 0
+        },
+        {
+          "call": 13,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3770,
+          "referenceLength": 3770,
+          "newEvents": 0
+        },
+        {
+          "call": 14,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 5108,
+          "referenceLength": 5108,
+          "newEvents": 0
+        },
+        {
+          "call": 15,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 6459,
+          "referenceLength": 6459,
+          "newEvents": 0
+        },
+        {
+          "call": 16,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 8816,
+          "referenceLength": 8817,
+          "newEvents": 3
+        },
+        {
+          "call": 17,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 8904,
+          "referenceLength": 8905,
+          "newEvents": 0
+        },
+        {
+          "call": 18,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 8999,
+          "referenceLength": 9000,
+          "newEvents": 0
+        },
+        {
+          "call": 19,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 9289,
+          "referenceLength": 9290,
+          "newEvents": 0
+        },
+        {
+          "call": 20,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 9563,
+          "referenceLength": 9564,
+          "newEvents": 0
+        }
+      ]
+    },
+    {
+      "label": "Trial 7",
+      "trial": "world244-os-task03-39c68b48__GDFJdud",
+      "segments": 3,
+      "tokenMultiplier": 2.899943709541233,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 248,
+          "referenceLength": 248,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3725,
+          "referenceLength": 3725,
+          "newEvents": 0
+        },
+        {
+          "call": 4,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3854,
+          "referenceLength": 3854,
+          "newEvents": 0
+        },
+        {
+          "call": 5,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3917,
+          "referenceLength": 3917,
+          "newEvents": 0
+        },
+        {
+          "call": 6,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4039,
+          "referenceLength": 4039,
+          "newEvents": 0
+        },
+        {
+          "call": 7,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4243,
+          "referenceLength": 4243,
+          "newEvents": 0
+        },
+        {
+          "call": 8,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4467,
+          "referenceLength": 4467,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 4859,
+          "referenceLength": 4859,
+          "newEvents": 0
+        },
+        {
+          "call": 10,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 5856,
+          "referenceLength": 5856,
+          "newEvents": 0
+        },
+        {
+          "call": 11,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 7084,
+          "referenceLength": 7084,
+          "newEvents": 0
+        },
+        {
+          "call": 12,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 8769,
+          "referenceLength": 8769,
+          "newEvents": 0
+        },
+        {
+          "call": 13,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 10666,
+          "referenceLength": 10666,
+          "newEvents": 0
+        },
+        {
+          "call": 14,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 10911,
+          "referenceLength": 10911,
+          "newEvents": 0
+        },
+        {
+          "call": 15,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 11044,
+          "referenceLength": 11043,
+          "newEvents": 1
+        },
+        {
+          "call": 16,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 12747,
+          "referenceLength": 12746,
+          "newEvents": 0
+        },
+        {
+          "call": 17,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 12879,
+          "referenceLength": 12878,
+          "newEvents": 0
+        },
+        {
+          "call": 18,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 13223,
+          "referenceLength": 13221,
+          "newEvents": 1
+        },
+        {
+          "call": 19,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 14147,
+          "referenceLength": 14145,
+          "newEvents": 0
+        },
+        {
+          "call": 20,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 14546,
+          "referenceLength": 14544,
+          "newEvents": 0
+        }
+      ]
+    },
+    {
+      "label": "Trial 8",
+      "trial": "world244-os-task03-39c68b48__s3nuYTn",
+      "segments": 8,
+      "tokenMultiplier": 7.636014422737021,
+      "prompts": [
+        {
+          "call": 2,
+          "exact": true,
+          "textEqual": true,
+          "tapeLength": 3526,
+          "referenceLength": 3526,
+          "newEvents": 0
+        },
+        {
+          "call": 3,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3795,
+          "referenceLength": 3793,
+          "newEvents": 2
+        },
+        {
+          "call": 4,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 3943,
+          "referenceLength": 3940,
+          "newEvents": 1
+        },
+        {
+          "call": 5,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 4537,
+          "referenceLength": 4534,
+          "newEvents": 0
+        },
+        {
+          "call": 6,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 4805,
+          "referenceLength": 4801,
+          "newEvents": 1
+        },
+        {
+          "call": 7,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 4911,
+          "referenceLength": 4906,
+          "newEvents": 1
+        },
+        {
+          "call": 8,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 5106,
+          "referenceLength": 5101,
+          "newEvents": 0
+        },
+        {
+          "call": 9,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 5296,
+          "referenceLength": 5290,
+          "newEvents": 1
+        },
+        {
+          "call": 10,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 5513,
+          "referenceLength": 5507,
+          "newEvents": 0
+        },
+        {
+          "call": 11,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 5750,
+          "referenceLength": 5743,
+          "newEvents": 1
+        },
+        {
+          "call": 12,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 5934,
+          "referenceLength": 5927,
+          "newEvents": 0
+        },
+        {
+          "call": 13,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6054,
+          "referenceLength": 6047,
+          "newEvents": 0
+        },
+        {
+          "call": 14,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6154,
+          "referenceLength": 6147,
+          "newEvents": 0
+        },
+        {
+          "call": 15,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6269,
+          "referenceLength": 6262,
+          "newEvents": 0
+        },
+        {
+          "call": 16,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6368,
+          "referenceLength": 6361,
+          "newEvents": 0
+        },
+        {
+          "call": 17,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6559,
+          "referenceLength": 6552,
+          "newEvents": 0
+        },
+        {
+          "call": 18,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 6836,
+          "referenceLength": 6829,
+          "newEvents": 0
+        },
+        {
+          "call": 19,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7057,
+          "referenceLength": 7050,
+          "newEvents": 0
+        },
+        {
+          "call": 20,
+          "exact": false,
+          "textEqual": true,
+          "tapeLength": 7246,
+          "referenceLength": 7238,
+          "newEvents": 1
+        }
+      ]
+    }
+  ]
+}
