@@ -1,32 +1,31 @@
 {
   "public_site": "https://alpayariyak.github.io/tito-research-explorer/",
   "frontend_inputs": {
-    "app.js": "d0ae3223b748e6a33826381b58d6066ab621a5f63c6e6fed726a1dce9c023a01",
-    "evaluation-section.html": "bf3c93a6c4d32ee29c1227c41478f8a1aa64425802d1379c417a09a334c8357b",
-    "evaluation.css": "794193aaa94386fbdc0485f8f1f92fbef7d038414e974167e3f7a53fb8518f70",
-    "evaluation.js": "f612cabb45e244ec947f19c5522d2bc613cfc511e4fabb9ea693d51f06513c4c",
+    "app.js": "bdde439fe7f188086887c94e256b3d8af1cb56bcdfb0c60a1832edd908266355",
     "evidence.js": "2dfffc13303e3919ac4c2a6b347499e31828197f2ab1fdbcbeba4738f43e7d53",
     "evidence.json": "cb7ed120ba17fbfd240ccb78093679310b1079db8b3a4024538bc543c23bee93",
     "explorer.css": "9b92827acca3bdaa3b6d65c8cf00f1dea854208f0a0fb052222218a7e47fe951",
-    "index.html": "7ddeac0eac7caab2584dd307133645153f3e298ccdf191447358690025880c7c",
-    "mechanics-section.html": "e94bf195c7243d9653992ebcdc17312e4f0c233008490de5d6a2322c833f8910",
+    "index.html": "d3267805b958a7782f772a9a7a881a8e000f886a60cc8847bad33833ef1dea9c",
+    "mechanics-section.html": "dcbe061fdc2933dceeb26199938b22712f834cc89d8bfea674b1325015592ae6",
     "mechanics.css": "e749b16845f8c015edb597511fc478fa7ca076e7f4fb42ff527ed00e994c3c34",
-    "mechanics.js": "5d72f3302f24328d24a290adb19bb968d743b7576f2cbca86af510c8acd18d34",
-    "progress-section.html": "7da3dc60428246e748429227c14f03b58ce58b59e978a6f48358d2a73e3542f1",
-    "research-data.js": "05481bddc94ab5dd132999e3afa7742a49791d5026a135f97ce7de7808f69d2b",
-    "research-section.html": "68f90970a8179e54467720f9a050537298a2095c06fb99e6634b17ffe1bb286e",
+    "mechanics.js": "91e1d6c6dd0a848a86183030d192ece61136ba71349e92c2b3854708d50995a4",
+    "narrative.css": "a44ea97befebcc38d8fddc0704ec85d935255cc2d1a78d3031f1c01e4e49b5f6",
+    "narrative.js": "ad401b8f644fec43b9b9532d77a129be9364e2e30753df035d256a90a43f031a",
+    "progress-section.html": "a36610ed3cec1b4058002f837ae693c94204be50531303846c063deb375e5b01",
+    "research-data.js": "5bafd85cfcdb5f575ca3ceff39491d324b9e34f628c0b43f786703b9b4f3298e",
+    "research-section.html": "6da953f1066f1f87a5a964401820ff100a32d354a2b59b01c938dedd442f2ac9",
     "research.js": "0c39864a5dfc531a99c7737aad12d7308f04eac8ba94ff949d90318f626fb638",
-    "study-section.html": "75762204b80aced9ed0c6cba1f3714376ae6d7fc4d111f7f2d69a5717687d2ec",
+    "study-section.html": "8e589694fe8b0737c00c4b1e1978cd9d472cd9f566c9c5a73eecca0922eafa59",
     "styles.css": "e1a9cabf4f3cf063c9a93365469220ac928d3d7c24ead30fd9af2d1c33f14658"
   },
   "outputs": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "README.md": "0a84d7470839a74e11fabbbdcc20b48bf0a9c0234e4e785989448223e6443bc9",
     "evidence.json": "e5c8f664cacf76ac0920e04c22d4f3caa1a7b74efb83c02722d327078fddbefb",
-    "index.html": "c04527a9a4d2b5016f3ab62a029e38fd3272e2be8cbee913f6d14e8c19cf68db",
-    "research-data.json": "a51202c85adac898a7221b197e1fc81ea1256c98adbdbbc8e1b38608a7bbc803",
-    "sources.html": "d09d8c6d61c8bcc354180d5a8e3f9b150d84517a29da780079f434e6455d6268",
-    "tito-explorer.html": "c04527a9a4d2b5016f3ab62a029e38fd3272e2be8cbee913f6d14e8c19cf68db"
+    "index.html": "32db478a7d388372737b9f8fab4968272cb96c92e2bd7de861e83459ab2dd2ce",
+    "research-data.json": "2f5270568c0c3e9891e8e64feaaa17e13ce5f8c4b6d50fbeea28aef365c5d90b",
+    "sources.html": "6afb143aaaa4d225a9211186b2ea1850b981b98552dfee8199f69f962875ced0",
+    "tito-explorer.html": "32db478a7d388372737b9f8fab4968272cb96c92e2bd7de861e83459ab2dd2ce"
   },
   "scope": "Whitelisted static edition; private source documents and operational records are not included."
 }

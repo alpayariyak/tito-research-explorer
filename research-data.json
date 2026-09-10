@@ -517,12 +517,6 @@
       "sha256": "763a365780e6ac566147bf852238b8e28b1fb7f4061e2aca1978f4f42ff695f9"
     },
     {
-      "id": "topology-review",
-      "label": "Evaluation timing and topology review",
-      "path": "sources.html#topology-review",
-      "sha256": "e9fe262910cae771e7b6cb6fd1e53c6b3094a60f4ba74f87f7ad2eb4aa089cf2"
-    },
-    {
       "id": "shared-prefix-review",
       "label": "Shared-prefix CPU reference and kernel handoff review",
       "path": "sources.html#shared-prefix-review",
@@ -552,36 +546,5 @@
     "note": "Call capture, transcript-memory state and rollout/generator integration passed scoped offline review. Trainer integration and live validation remain separate work. No completed crossed-study reward result is reported.",
     "asOf": "2026-09-10",
     "sharedPrefix": "CPU references checked; real kernels and distributed validation remain"
-  },
-  "evaluation": {
-    "asOf": "2026-09-10",
-    "status": "Unadopted topology proposal; scenarios, not live results",
-    "attempts": [
-      352,
-      348
-    ],
-    "llmAgentTimePct": [
-      93.469946,
-      92.008486
-    ],
-    "enginesPerNode": 2,
-    "configuredTokensPerEngine": 2883584,
-    "hourlyRate": {
-      "7": 224,
-      "3": 112
-    },
-    "baseEvalHours": [
-      18,
-      24
-    ],
-    "reconstructedPeakTokens": 19070000,
-    "illustrativeContextTokens": 85100,
-    "measurementSha256": "97e633ad282f80dd038feb3e379060a39835cb651f3f46690b221af1b726ccd6",
-    "reviewSha256": "e9fe262910cae771e7b6cb6fd1e53c6b3094a60f4ba74f87f7ad2eb4aa089cf2",
-    "limits": [
-      "Client timers and minute-sampled reconstruction; no GPU or resident-KV telemetry.",
-      "Memory controls and total-wall multiplier are independent scenarios, not a calibrated simulator.",
-      "Resource prices include trainer and generators; other costs and actual invoices are excluded."
-    ]
   }
 }
